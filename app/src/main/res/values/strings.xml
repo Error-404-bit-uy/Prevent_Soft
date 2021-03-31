@@ -1,3 +1,40 @@
 <resources>
+    <!-- Nombre principal -->
     <string name="app_name">Prevent Soft</string>
+    <!-- //////////////////////////////////// -->
+
+    <!-- Login -->
+    <string name="login_title">Ingreso</string>
+    <string name="login_usr">Nombre de usuario</string>
+    <string name="login_pass">Contraseña</string>
+    <!-- //////////////////////////////////// -->
+
+    <!-- Inicio -->
+    <string name="home_title">Inicio</string>
+    <string name="home_btn_form">Formularios</string>
+    <string name="home_btn_tools">Herramientas</string>
+    <string name="home_btn_prevent">Prevención</string>
+    <string name="home_tbn_reco">Recomendaciones</string>
+    <!-- //////////////////////////////////// -->
+
+    <!-- Formularios -->
+    <!-- Botones -->
+    <string name="form_btn_add">Nuevo</string>
+    <string name="form_btn_edit">Editar</string>
+    <string name="form_btn_history">Histórico</string>
+    <!-- //////////////////////////////// -->
+    <!-- Texto de formulario nuevo -->
+    <string name="new_form_title">Nuevo Documento APR (Análisis Preliminar de Riesgos)</string>
+    <string name="new_form_doc_data_title">Datos del Documento</string>
+    <string name="new_form_doc_data_name">Nombre del Documento:</string>
+    <string name="new_form_doc_data_state">Estado:</string>
+    <string name="new_form_doc_data_comments">Comentarios:</string>
+    <!-- //////////////////////////////// -->
+    <!-- //////////////////////////////////// -->
+
+    <!-- Herramientas -->
+    <string name="tools_btn_add">Nuevo</string>
+    <string name="tools_btn_edit">Editar</string>
+    <string name="tools_btn_stock">Inventario</string>
+    <!-- //////////////////////////////////// -->
 </resources>
