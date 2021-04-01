@@ -24,19 +24,111 @@
         <string name="form_btn_history">Histórico</string>
         <!-- //////////////////////////////// -->
         <!-- Texto de formulario nuevo -->
-        <string name="new_form_title">Nuevo Documento APR (Análisis Preliminar de Riesgos)</string>
-        <string name="new_form_doc_data_title">Datos del Documento</string>
-        <string name="new_form_doc_data_name">Nombre del Documento:</string>
-        <string name="new_form_doc_data_state">Estado:</string>
-        <string name="new_form_doc_data_comments">Comentarios:</string>
+            <!-- Datos del documento -->
+            <string name="new_form_title">Nuevo Documento APR (Análisis Preliminar de Riesgos)</string>
+            <string name="new_form_doc_data_title">Datos del Documento</string>
+            <string name="new_form_doc_data_name">Nombre del Documento:</string>
+            <string name="new_form_doc_data_state">Estado:</string>
+            <string name="new_form_doc_data_comments">Comentarios:</string>
+            <!-- //////////////////////////////// -->
+            <!-- Opciones de desplegable "Estado" -->
+            <string name="new_form_doc_data_state_option_1">Iniciado</string>
+            <string name="new_form_doc_data_state_option_2">Completado sin incidentes</string>
+            <string name="new_form_doc_data_state_option_3">Completado con incidentes</string>
+            <string name="new_form_doc_data_state_option_4">Completado con incidentes graves</string>
+            <string name="new_form_doc_data_state_option_5">Cancelado</string>
+            <!-- //////////////////////////////// -->
+
+            <!-- Lineas del documento -->
+            <string name="new_form_doc_lines_title">Líneas del Documento</string>
+            <string name="new_form_doc_lines_line">Línea</string>
+            <string name="new_form_doc_lines_activities">Actividades a Realizar</string>
+            <string name="new_form_doc_lines_tools">Herramientas a Utilizar</string>
+            <string name="new_form_doc_lines_equipment">Equipo de Protección Personal</string>
+            <string name="new_form_doc_lines_risks">Peligros y Riesgos</string>
+            <string name="new_form_doc_lines_preventives">Medidas Preventivas</string>
+            <!-- //////////////////////////////// -->
+            <!-- Opciones de "Herramientas a Utilizar" -->
+            <string name="new_form_doc_lines_tools_option_1">Soldadora Eléctrica</string>
+            <string name="new_form_doc_lines_tools_option_2">Soplete</string>
+            <string name="new_form_doc_lines_tools_option_3">Taladro de Mano</string>
+            <string name="new_form_doc_lines_tools_option_4">Mini Cargador</string>
+            <string name="new_form_doc_lines_tools_option_5">Eslinga de cable de acero</string>
+            <string name="new_form_doc_lines_tools_option_6">Faja textil</string>
+            <string name="new_form_doc_lines_tools_option_7">Amoladora</string>
+            <string name="new_form_doc_lines_tools_option_8">Chispero</string>
+            <!-- //////////////////////////////// -->
+            <!-- Opciones de "Equipo de Protección Personal" -->
+            <string name="new_form_doc_lines_equipment_option_1">Guante vaqueta</string>
+            <string name="new_form_doc_lines_equipment_option_2">Guantes de protección mecánica</string>
+            <string name="new_form_doc_lines_equipment_option_3">Guantes de Látex</string>
+            <string name="new_form_doc_lines_equipment_option_4">Guantes de Nitrilo</string>
+            <string name="new_form_doc_lines_equipment_option_5">Guantes de Soldador</string>
+            <string name="new_form_doc_lines_equipment_option_6">Lentes de oxicorte</string>
+            <string name="new_form_doc_lines_equipment_option_7">Casco</string>
+            <string name="new_form_doc_lines_equipment_option_8">Delantal de cuero</string>
+            <string name="new_form_doc_lines_equipment_option_9">Protección audittiva</string>
+            <string name="new_form_doc_lines_equipment_option_10">Arnés de Seguridad</string>
+            <!-- //////////////////////////////// -->
+            <!-- Opciones de "Peligros y Riesgos" -->
+            <string name="new_form_doc_lines_risks_option_1">Aplastamiento</string>
+            <string name="new_form_doc_lines_risks_option_2">Atrapamiento</string>
+            <string name="new_form_doc_lines_risks_option_3">Explosión e incendio</string>
+            <string name="new_form_doc_lines_risks_option_4">Caída distinto nivel</string>
+            <string name="new_form_doc_lines_risks_option_5">Caída de objetos en manipulación</string>
+            <string name="new_form_doc_lines_risks_option_6">Caída de pieza durante izaje</string>
+            <string name="new_form_doc_lines_risks_option_7">Caída mismo nivel</string>
+            <!-- //////////////////////////////// -->
+            <!-- Opciones de "Medidas Preventivas" -->
+            <string name="new_form_doc_lines_preventives_option_1">Amarrado el 100% del tiempo</string>
+            <string name="new_form_doc_lines_preventives_option_2">Usar protección solar</string>
+            <string name="new_form_doc_lines_preventives_option_3">Amarrar cada parante con faja y puente grúa</string>
+            <string name="new_form_doc_lines_preventives_option_4">Asegurar trayecto de carga suspendida</string>
+            <string name="new_form_doc_lines_preventives_option_5">Atención tránsito de colaboladores</string>
+            <string name="new_form_doc_lines_preventives_option_6">Atención tránsito de otros equipos</string>
+            <string name="new_form_doc_lines_preventives_option_7">Atención en la tarea</string>
+            <string name="new_form_doc_lines_preventives_option_8">Check list de pre uso</string>
+            <string name="new_form_doc_lines_preventives_option_9">Chequeo de Instalación Eléctrica</string>
+            <string name="new_form_doc_lines_preventives_option_10">chequeo del Estado de la Herramienta</string>
+            <!-- //////////////////////////////// -->
         <!-- //////////////////////////////// -->
+
+            <!-- Listado de Documentos -->
+            <string name="form_list_title">Listado de Documentos</string>
+            <string name="form_list_number">Numero</string>
+            <string name="form_list_name">Titulo</string>
+            <string name="form_list_estate">Estado</string>
+            <string name="form_list_date">Fecha</string>
+            <string name="form_list_user">Usuario</string>
+            <string name="form_list_edit">Editar</string>
+            <string name="form_list_view_doc">Ver Documento</string>
+            <string name="form_list_btn_edit">Editar</string>
+            <string name="form_list_btn_view_doc">Ver Dettalle</string>
+            <!-- //////////////////////////////// -->
     <!-- //////////////////////////////////// -->
 
     <!-- Herramientas -->
     <string name="tools_btn_add">Nuevo</string>
-    <string name="tools_btn_edit">Editar</string>
-    <string name="tools_btn_stock">Inventario</string>
+    <string name="tools_btn_edit">Ver y Editar Herramientas</string>
+        <!--Nueva Herramienta-->
+        <string name="new_tool_title">Nueva Herramienta</string>
+        <string name="new_tool_name">Nombre de la Herramienta:</string>
+        <string name="new_tool_image">Puede subir una imagen:</string>
+        <string name="new_tool_btn_save">Guardar</string>
+        <!-- //////////////////////////////// -->
+        <!-- Listado de Herramientas -->
+        <string name="tools_list_title">Listado de Herramientas</string>
+        <string name="tools_list_line">Linea</string>
+        <string name="tools_list_name">Nombre</string>
+        <string name="tools_list_date">Fecha</string>
+        <string name="tools_list_image">Imagen</string>
+        <string name="tools_list_edit">Editar</string>
+        <string name="tools_list_delete">Eliminar</string>
+        <string name="tools_list_btn_edit">Editar</string>
+        <string name="tools_list_btn_delete">Eliminar</string>
+        <!-- //////////////////////////////// -->
     <!-- //////////////////////////////////// -->
 
-    <!-- TESTTTTTT -->>
+
+
 </resources>
