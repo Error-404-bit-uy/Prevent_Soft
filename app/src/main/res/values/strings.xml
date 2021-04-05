@@ -7,6 +7,13 @@
     <string name="login_title">Ingreso</string>
     <string name="login_usr">Nombre de usuario</string>
     <string name="login_pass">Contraseña</string>
+    <string name="prevent_soft_name">Prevent Soft</string>
+    <string name="logo_prevent_soft">logoPreventSoft</string>
+    <string name="login_usr_title">Usuario:</string>
+    <string name="login_usr_input"></string>
+    <string name="hint_usr_name">Ingrese su nombre de usuario</string>
+    <string name="hint_pass">Ingrese su contraseña</string>
+    <string name="login_btn_confirm">Confirmar</string>
     <!-- //////////////////////////////////// -->
 
     <!-- Inicio -->
@@ -126,8 +133,11 @@
         <string name="tools_list_delete">Eliminar</string>
         <string name="tools_list_btn_edit">Editar</string>
         <string name="tools_list_btn_delete">Eliminar</string>
-        <!-- //////////////////////////////// -->
+    <!-- //////////////////////////////// -->
     <!-- //////////////////////////////////// -->
+
+    <!-- Otros -->
+
 
 
 
