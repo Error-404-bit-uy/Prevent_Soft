@@ -1,8 +1,10 @@
 package com.bit.preventsoft.models;
 
 import androidx.annotation.NonNull;
+import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+@Entity(tableName = "Tool")
 public class Tool {
     @PrimaryKey(autoGenerate = true)
     @NonNull

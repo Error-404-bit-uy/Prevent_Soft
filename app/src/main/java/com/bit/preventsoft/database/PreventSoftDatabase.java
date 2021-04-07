@@ -21,7 +21,8 @@ import com.bit.preventsoft.models.Precaution;
 import com.bit.preventsoft.models.Tool;
 import com.bit.preventsoft.models.User;
 
-@Database(entities={Apr.class, AprLine.class, Epp.class, Hazard.class, Precaution.class, Tool.class, User.class}, version=1)
+@Database(entities={Apr.class, AprLine.class, Epp.class, Hazard.class, Precaution.class, Tool.class, User.class,
+                    }, version=1)
 public abstract class PreventSoftDatabase extends RoomDatabase {
     public abstract AprDao aprDao();
     public abstract AprLineDao aprLineDao();
@@ -31,19 +32,20 @@ public abstract class PreventSoftDatabase extends RoomDatabase {
     public abstract ToolDao toolDao();
     public abstract UserDao userDao();
 
-    private static volatile PreventSoftDatabase INSTANCE;
+    private static  PreventSoftDatabase preventSoftDatabase;
+
 
     public static PreventSoftDatabase getDatabase(final Context context){
-        if(INSTANCE == null){
+        if(preventSoftDatabase == null){
             synchronized (PreventSoftDatabase.class){
-                if(INSTANCE == null){
-                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
+
+                    preventSoftDatabase = Room.databaseBuilder(context,
                             PreventSoftDatabase.class, "PreventSoftDataBase")
                             .build();
                 }
             }
-        }
-        return INSTANCE;
+
+        return preventSoftDatabase;
     }
 
 

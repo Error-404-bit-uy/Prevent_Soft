@@ -21,6 +21,9 @@ public interface UserDao {
     @Delete
     void deleteUser(User user);
 
-    @Query("SELECT * FROM Users WHERE email= :email")
-    void loginUser(String email);
+    @Query("SELECT * FROM User WHERE email= (:email) AND password= (:password)")
+        User loginUser(String email, String password);
+
+    @Query("INSERT INTO User (email,superuser,password) VALUES ('error@404.com',1,'404')")
+        User registerFirstUser();
 }
