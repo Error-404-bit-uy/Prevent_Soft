@@ -19,7 +19,7 @@
     <string name="home_btn_form">Formularios</string>
     <string name="home_btn_tools">Herramientas</string>
     <string name="home_btn_prevent">Prevención</string>
-    <string name="home_tbn_reco">Recomendaciones</string>
+    <string name="home_btn_reco">Recomendaciones</string>
     <string name="home_icon_desc">Icono de inicio</string>
     <string name="home_text">Inicio</string>
     <!-- //////////////////////////////////// -->

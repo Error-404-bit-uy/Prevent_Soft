@@ -35,12 +35,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="80dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="121dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/home_icon_desc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/icons8_home" />
@@ -57,88 +56,76 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="79dp"
-        android:layout_height="16dp"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/cantora_one"
         android:text="@string/home_text"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prevent_soft_name2" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="155dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="44dp"
+        android:id="@+id/btn_forms"
+        android:layout_width="173dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="40dp"
-        android:text="Button"
+        android:text="@string/home_btn_form"
+        android:textAlignment="center"
+        android:textSize="11sp"
         app:backgroundTint="#E25E1493"
         app:icon="@drawable/icono_archivoshdpi"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btn_prevention"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.954" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="155dp"
-        android:layout_height="97dp"
+        android:id="@+id/btn_recomendations"
+        android:layout_width="173dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="168dp"
+        android:text="@string/home_btn_reco"
+        android:textSize="5.9sp"
+        app:backgroundTint="#E25E1493"
+        app:icon="@drawable/icono_recomendacioneshdpi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/btn_prevention" />
+
+    <Button
+        android:id="@+id/btn_prevention"
+        android:layout_width="173dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="168dp"
+        android:text="@string/home_btn_prevent"
+        android:textSize="8.9sp"
+        app:backgroundTint="#E25E1493"
+        app:icon="@drawable/icono_prevencionhdpi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_tools"
+        android:layout_width="173dp"
+        android:layout_height="124dp"
         android:layout_marginBottom="40dp"
-        android:text="Button"
+        android:text="@string/home_btn_tools"
+        android:textAlignment="center"
+        android:textSize="7.3sp"
         app:backgroundTint="#E25E1493"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:icon="@drawable/icono_herramientashdpi"
+        app:layout_constraintBottom_toTopOf="@+id/btn_recomendations"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/btn_forms"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.965" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="155dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="56dp"
-        android:text="Button"
-        app:backgroundTint="#E25E1493"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="155dp"
-        android:layout_height="97dp"
-        android:layout_marginBottom="56dp"
-        android:text="Button"
-        app:backgroundTint="#E25E1493"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="155dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="112dp"
-        android:text="Button"
-        app:backgroundTint="#E25E1493"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="155dp"
-        android:layout_height="97dp"
-        android:layout_marginBottom="112dp"
-        android:text="Button"
-        app:backgroundTint="#E25E1493"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/button5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
