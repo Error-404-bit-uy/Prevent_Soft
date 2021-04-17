@@ -76,6 +76,7 @@
         android:layout_marginBottom="40dp"
         android:text="Button"
         app:backgroundTint="#E25E1493"
+        app:icon="@drawable/icono_archivoshdpi"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
