@@ -26,6 +26,7 @@
 
     <!-- Formularios -->
         <!-- Botones -->
+        <string name="form_menu_title">Formularios</string>
         <string name="form_btn_add">Nuevo</string>
         <string name="form_btn_edit">Editar</string>
         <string name="form_btn_history">Histórico</string>
@@ -115,8 +116,10 @@
     <!-- //////////////////////////////////// -->
 
     <!-- Herramientas -->
-    <string name="tools_btn_add">Nuevo</string>
-    <string name="tools_btn_edit">Ver y Editar Herramientas</string>
+    <string name="tools_btn_add">Agregar Herramienta</string>
+    <string name="tools_btn_edit">Ver y Editar</string>
+    <string name="tools_btn_stock">Stock</string>
+    <string name="tools_menu_title">Herramientas</string>
         <!--Nueva Herramienta-->
         <string name="new_tool_title">Nueva Herramienta</string>
         <string name="new_tool_name">Nombre de la Herramienta:</string>

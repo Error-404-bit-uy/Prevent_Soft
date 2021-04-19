@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tools_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E25E1493"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/btn_new_tool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="@string/tools_menu_title" />
+
+    <Button
+        android:id="@+id/btn_new_tool"
+        android:layout_width="206dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/tools_btn_add"
+        android:textSize="12.5sp"
+        app:backgroundTint="#E25E1493"
+        app:icon="@drawable/icono_herramientahdpi"
+        app:layout_constraintBottom_toTopOf="@+id/btn_edit_tool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_edit_tool"
+        android:layout_width="206dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/tools_btn_edit"
+        android:textSize="14sp"
+        app:backgroundTint="#E25E1493"
+        app:icon="@drawable/icono_tools_edithdpi"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tools_stock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_tools_stock"
+        android:layout_width="206dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/tools_btn_stock"
+        app:backgroundTint="#E25E1493"
+        app:icon="@drawable/icono_tools_warehousehdpi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
