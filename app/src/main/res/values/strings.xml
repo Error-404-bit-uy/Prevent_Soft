@@ -139,6 +139,21 @@
     <!-- //////////////////////////////// -->
     <!-- //////////////////////////////////// -->
 
+
+    <!-- Prevención -->
+    <string name="prevention_title">Prevención</string>
+    <string name="prevention_tab_1_title">Cuidados Covid-19</string>
+    <string name="prevention_tab_2_title">Control</string>
+    <string name="prevention_tab_3_title">Al trabajar</string>
+    <string name="prevention_tab_4_title">Al finalizar</string>
+    <!-- ////////////////////////////////////////// -->
+
+    <!-- Recomendación -->
+    <string name="recomendation_title">Recomendaciones</string>
+    <string name="recomendation_tab_1_title">En caso de accidente</string>
+    <string name="recomendation_tab_2_title">Por consultas laborales</string>
+    <string name="recomendation_tab_3_title">Videollamada</string>
+
     <!-- Otros -->
 
 
