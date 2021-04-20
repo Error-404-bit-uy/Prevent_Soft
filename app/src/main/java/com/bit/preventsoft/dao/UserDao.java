@@ -24,6 +24,6 @@ public interface UserDao {
     @Query("SELECT * FROM User WHERE email= (:email) AND password= (:password)")
         User loginUser(String email, String password);
 
-    @Query("INSERT INTO User (email,superuser,password) VALUES ('error@404.com',1,'404')")
-        User registerFirstUser();
+   // @Query("INSERT INTO User (email,superuser,password) VALUES (:email,1,:password)")
+   //     User registerFirstUser(String email, String password);
 }

@@ -35,14 +35,15 @@ public abstract class PreventSoftDatabase extends RoomDatabase {
     private static  PreventSoftDatabase preventSoftDatabase;
 
 
-    public static PreventSoftDatabase getDatabase(final Context context){
+    public static synchronized PreventSoftDatabase getDatabase(Context context){
         if(preventSoftDatabase == null){
-            synchronized (PreventSoftDatabase.class){
+
 
                     preventSoftDatabase = Room.databaseBuilder(context,
                             PreventSoftDatabase.class, "PreventSoftDataBase")
+                            .fallbackToDestructiveMigration()
                             .build();
-                }
+
             }
 
         return preventSoftDatabase;

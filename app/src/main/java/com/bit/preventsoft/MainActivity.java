@@ -40,22 +40,25 @@ public class MainActivity extends AppCompatActivity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        User user = userDao.registerFirstUser();
-                        if (user == null) {
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Toast.makeText(getApplicationContext(), "Ocurrió un error", Toast.LENGTH_LONG).show();
-                                }
-                            });
-                        } else {
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
+                        User user = new User();
+                        user.setEmail("email@email.com");
+                        user.setPassword("password");
+                        userDao.insertUser(user);
+                       // if (user == null) {
+                       //     runOnUiThread(new Runnable() {
+                       //         @Override
+                       //         public void run() {
+                        //            Toast.makeText(getApplicationContext(), "Ocurrió un error", Toast.LENGTH_LONG).show();
+                        //        }
+                        //    });
+                       // } else {
+                         //   runOnUiThread(new Runnable() {
+                           //     @Override
+                             //   public void run() {
                                     Toast.makeText(getApplicationContext(), "Primer usuario creado", Toast.LENGTH_LONG).show();
-                                }
-                            });
-                        }
+                               // }
+                           // });
+                       // }
                     }
                 }).start();
 
