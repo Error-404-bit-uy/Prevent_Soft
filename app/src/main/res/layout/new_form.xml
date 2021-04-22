@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="139dp"
+    tools:layout_editor_absoluteY="251dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/new_form_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E25E1493"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/new_form_toolbar_title" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="264dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="@string/new_form_doc_data_title"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_toolbar" />
+
+        <TextView
+            android:id="@+id/document_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/new_form_doc_data_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/document_name"
+            android:layout_width="376dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:labelFor="@id/document_name"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/document_name_title" />
+
+        <TextView
+            android:id="@+id/document_state_title"
+            android:layout_width="156dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/new_form_doc_data_status"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/document_name" />
+
+        <Spinner
+            android:id="@+id/new_form_status_selector"
+            android:layout_width="365dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:entries="@array/new_form_status_selector_options"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/document_state_title" />
+
+        <TextView
+            android:id="@+id/forms_data_comments_title"
+            android:layout_width="160dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:importantForAutofill="no"
+            android:text="@string/new_form_doc_data_comments_title"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_status_selector" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="376dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/add_text"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forms_data_comments_title" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="new_form_document_lines"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/new_form_document_lines"
+            android:layout_width="373dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="@string/new_form_doc_lines_title"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+        <TextView
+            android:id="@+id/new_form_line_title"
+            android:layout_width="185dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/new_form_doc_lines_line"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_document_lines" />
+
+        <TextView
+            android:id="@+id/new_form_line_number"
+            android:layout_width="150dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/line_number"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toEndOf="@+id/new_form_line_title"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_document_lines" />
+
+        <TextView
+            android:id="@+id/doc_lines_activities_title"
+            android:layout_width="264dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="16dp"
+            android:importantForAutofill="no"
+            android:text="@string/new_form_doc_lines_activities"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_line_title" />
+
+        <EditText
+            android:id="@+id/doc_lines_activities_text"
+            android:layout_width="381dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/add_text"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doc_lines_activities_title" />
+
+        <TextView
+            android:id="@+id/doc_lines_use_tools_title"
+            android:layout_width="269dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/new_form_doc_lines_tools"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doc_lines_activities_text" />
+
+        <Spinner
+            android:id="@+id/new_form_tools_selector"
+            android:layout_width="362dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="12dp"
+            android:entries="@array/new_form_doc_lines_tools_options"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doc_lines_use_tools_title" />
+
+        <TextView
+            android:id="@+id/new_form_equipment_title"
+            android:layout_width="265dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="177dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="176dp"
+            android:text="@string/new_form_doc_lines_equipment"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_tools_selector" />
+
+        <Spinner
+            android:id="@+id/new_form_epp_selector"
+            android:layout_width="420dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:entries="@array/new_form_doc_lines_equipment_options"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_equipment_title" />
+
+        <TextView
+            android:id="@+id/new_form_risks_title"
+            android:layout_width="269dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="98dp"
+            android:text="@string/new_form_doc_lines_risks"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_epp_selector" />
+
+        <Spinner
+            android:id="@+id/new_form_risks_selector"
+            android:layout_width="413dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="35dp"
+            android:entries="@array/new_form_doc_lines_risks_option"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_risks_title" />
+
+        <TextView
+            android:id="@+id/new_form_preventives_title"
+            android:layout_width="261dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="114dp"
+            android:text="@string/new_form_doc_lines_preventives"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_risks_selector" />
+
+        <Spinner
+            android:id="@+id/new_form_preventives_selector"
+            android:layout_width="422dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:entries="@array/new_form_lines_preventives_options"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_preventives_title" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="234dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="123dp"
+            android:text="@string/btn_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_form_preventives_selector" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

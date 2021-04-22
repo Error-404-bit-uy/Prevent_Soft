@@ -33,19 +33,22 @@
         <!-- //////////////////////////////// -->
         <!-- Texto de formulario nuevo -->
             <!-- Datos del documento -->
-            <string name="new_form_title">Nuevo Documento APR (Análisis Preliminar de Riesgos)</string>
+            <string name="new_form_toolbar_title">Nuevo Documento APR</string>
             <string name="new_form_doc_data_title">Datos del Documento</string>
             <string name="new_form_doc_data_name">Nombre del Documento:</string>
-            <string name="new_form_doc_data_state">Estado:</string>
-            <string name="new_form_doc_data_comments">Comentarios:</string>
+            <string name="new_form_doc_data_status">Estado:</string>
+                <!-- Opciones de desplegable "Estado" -->
+                <string-array name="new_form_status_selector_options">
+                    <item>Iniciado</item>
+                    <item>Completado sin incidentes</item>
+                    <item>Completado con incidentes</item>
+                    <item>Completado con incidentes graves</item>
+                    <item>Cancelado</item>
+                </string-array>
+                <!-- //////////////////////////////// -->
+            <string name="new_form_doc_data_comments_title">Comentarios:</string>
             <!-- //////////////////////////////// -->
-            <!-- Opciones de desplegable "Estado" -->
-            <string name="new_form_doc_data_state_option_1">Iniciado</string>
-            <string name="new_form_doc_data_state_option_2">Completado sin incidentes</string>
-            <string name="new_form_doc_data_state_option_3">Completado con incidentes</string>
-            <string name="new_form_doc_data_state_option_4">Completado con incidentes graves</string>
-            <string name="new_form_doc_data_state_option_5">Cancelado</string>
-            <!-- //////////////////////////////// -->
+
 
             <!-- Lineas del documento -->
             <string name="new_form_doc_lines_title">Líneas del Documento</string>
@@ -55,49 +58,58 @@
             <string name="new_form_doc_lines_equipment">Equipo de Protección Personal</string>
             <string name="new_form_doc_lines_risks">Peligros y Riesgos</string>
             <string name="new_form_doc_lines_preventives">Medidas Preventivas</string>
+            <string name="add_text">Ingrese texto</string>
             <!-- //////////////////////////////// -->
             <!-- Opciones de "Herramientas a Utilizar" -->
-            <string name="new_form_doc_lines_tools_option_1">Soldadora Eléctrica</string>
-            <string name="new_form_doc_lines_tools_option_2">Soplete</string>
-            <string name="new_form_doc_lines_tools_option_3">Taladro de Mano</string>
-            <string name="new_form_doc_lines_tools_option_4">Mini Cargador</string>
-            <string name="new_form_doc_lines_tools_option_5">Eslinga de cable de acero</string>
-            <string name="new_form_doc_lines_tools_option_6">Faja textil</string>
-            <string name="new_form_doc_lines_tools_option_7">Amoladora</string>
-            <string name="new_form_doc_lines_tools_option_8">Chispero</string>
+            <string-array name="new_form_doc_lines_tools_options">
+                <item>Soldadora Eléctrica</item>
+                <item>Soplete</item>
+                <item>Taladro de Mano</item>
+                <item>Mini Cargador</item>
+                <item>Eslinga de cable de acero</item>
+                <item>Faja textil</item>
+                <item>Amoladora</item>
+                <item>Chispero</item>
+            </string-array>
             <!-- //////////////////////////////// -->
             <!-- Opciones de "Equipo de Protección Personal" -->
-            <string name="new_form_doc_lines_equipment_option_1">Guante vaqueta</string>
-            <string name="new_form_doc_lines_equipment_option_2">Guantes de protección mecánica</string>
-            <string name="new_form_doc_lines_equipment_option_3">Guantes de Látex</string>
-            <string name="new_form_doc_lines_equipment_option_4">Guantes de Nitrilo</string>
-            <string name="new_form_doc_lines_equipment_option_5">Guantes de Soldador</string>
-            <string name="new_form_doc_lines_equipment_option_6">Lentes de oxicorte</string>
-            <string name="new_form_doc_lines_equipment_option_7">Casco</string>
-            <string name="new_form_doc_lines_equipment_option_8">Delantal de cuero</string>
-            <string name="new_form_doc_lines_equipment_option_9">Protección audittiva</string>
-            <string name="new_form_doc_lines_equipment_option_10">Arnés de Seguridad</string>
+            <string-array name="new_form_doc_lines_equipment_options">
+                <item>Guante vaqueta</item>
+                <item>Guantes de protección mecánica</item>
+                <item>Guantes de Látex</item>
+                <item>Guantes de Nitrilo</item>
+                <item>Guantes de Soldador</item>
+                <item>Lentes de oxicorte</item>
+                <item>Casco</item>
+                <item>Delantal de cuero</item>
+                <item>Protección audittiva</item>
+                <item>Arnés de Seguridad</item>
+            </string-array>
             <!-- //////////////////////////////// -->
             <!-- Opciones de "Peligros y Riesgos" -->
-            <string name="new_form_doc_lines_risks_option_1">Aplastamiento</string>
-            <string name="new_form_doc_lines_risks_option_2">Atrapamiento</string>
-            <string name="new_form_doc_lines_risks_option_3">Explosión e incendio</string>
-            <string name="new_form_doc_lines_risks_option_4">Caída distinto nivel</string>
-            <string name="new_form_doc_lines_risks_option_5">Caída de objetos en manipulación</string>
-            <string name="new_form_doc_lines_risks_option_6">Caída de pieza durante izaje</string>
-            <string name="new_form_doc_lines_risks_option_7">Caída mismo nivel</string>
+            <string-array name="new_form_doc_lines_risks_option">
+                <item>Aplastamiento</item>
+                <item>Atrapamiento</item>
+                <item>Explosión e incendio</item>
+                <item>Caída distinto nivel</item>
+                <item>Caída de objetos en manipulación</item>
+                <item>Caída de pieza durante izaje</item>
+                <item>Caída mismo nivel</item>
+            </string-array>
             <!-- //////////////////////////////// -->
             <!-- Opciones de "Medidas Preventivas" -->
-            <string name="new_form_doc_lines_preventives_option_1">Amarrado el 100% del tiempo</string>
-            <string name="new_form_doc_lines_preventives_option_2">Usar protección solar</string>
-            <string name="new_form_doc_lines_preventives_option_3">Amarrar cada parante con faja y puente grúa</string>
-            <string name="new_form_doc_lines_preventives_option_4">Asegurar trayecto de carga suspendida</string>
-            <string name="new_form_doc_lines_preventives_option_5">Atención tránsito de colaboladores</string>
-            <string name="new_form_doc_lines_preventives_option_6">Atención tránsito de otros equipos</string>
-            <string name="new_form_doc_lines_preventives_option_7">Atención en la tarea</string>
-            <string name="new_form_doc_lines_preventives_option_8">Check list de pre uso</string>
-            <string name="new_form_doc_lines_preventives_option_9">Chequeo de Instalación Eléctrica</string>
-            <string name="new_form_doc_lines_preventives_option_10">chequeo del Estado de la Herramienta</string>
+            <string-array name="new_form_lines_preventives_options">
+                <item>Amarrado el 100% del tiempo</item>
+                <item>Usar protección solar</item>
+                <item>Amarrar cada parante con faja y puente grúa</item>
+                <item>Asegurar trayecto de carga suspendida</item>
+                <item>Atención tránsito de colaboladores</item>
+                <item>Atención tránsito de otros equipos</item>
+                <item>Atención en la tarea</item>
+                <item>Check list de pre uso</item>
+                <item>Chequeo de Instalación Eléctrica</item>
+                <item>Chequeo del Estado de la Herramienta</item>
+            </string-array>
             <!-- //////////////////////////////// -->
         <!-- //////////////////////////////// -->
 
@@ -153,8 +165,10 @@
     <string name="recomendation_tab_1_title">En caso de accidente</string>
     <string name="recomendation_tab_2_title">Por consultas laborales</string>
     <string name="recomendation_tab_3_title">Videollamada</string>
+    <string name="line_number">1</string>
 
     <!-- Otros -->
+    <string name="btn_save">Guardar</string>
 
 
 
