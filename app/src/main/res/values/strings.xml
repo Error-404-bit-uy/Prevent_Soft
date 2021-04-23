@@ -25,106 +25,106 @@
     <!-- //////////////////////////////////// -->
 
     <!-- Formularios -->
-        <!-- Botones -->
-        <string name="form_menu_title">Formularios</string>
-        <string name="form_btn_add">Nuevo</string>
-        <string name="form_btn_edit">Editar</string>
-        <string name="form_btn_history">Histórico</string>
-        <!-- //////////////////////////////// -->
-        <!-- Texto de formulario nuevo -->
-            <!-- Datos del documento -->
-            <string name="new_form_toolbar_title">Nuevo Documento APR</string>
-            <string name="new_form_doc_data_title">Datos del Documento</string>
-            <string name="new_form_doc_data_name">Nombre del Documento:</string>
-            <string name="new_form_doc_data_status">Estado:</string>
-                <!-- Opciones de desplegable "Estado" -->
-                <string-array name="new_form_status_selector_options">
-                    <item>Iniciado</item>
-                    <item>Completado sin incidentes</item>
-                    <item>Completado con incidentes</item>
-                    <item>Completado con incidentes graves</item>
-                    <item>Cancelado</item>
-                </string-array>
-                <!-- //////////////////////////////// -->
-            <string name="new_form_doc_data_comments_title">Comentarios:</string>
-            <!-- //////////////////////////////// -->
+    <!-- Botones -->
+    <string name="form_menu_title">Formularios</string>
+    <string name="form_btn_add">Nuevo</string>
+    <string name="form_btn_edit">Editar</string>
+    <string name="form_btn_history">Histórico</string>
+    <!-- //////////////////////////////// -->
+    <!-- Texto de formulario nuevo -->
+    <!-- Datos del documento -->
+    <string name="new_form_toolbar_title">Nuevo Documento APR</string>
+    <string name="new_form_doc_data_title">Datos del Documento</string>
+    <string name="new_form_doc_data_name">Nombre del Documento:</string>
+    <string name="new_form_doc_data_status">Estado:</string>
+    <!-- Opciones de desplegable "Estado" -->
+    <string-array name="new_form_status_selector_options">
+        <item>Iniciado</item>
+        <item>Completado sin incidentes</item>
+        <item>Completado con incidentes</item>
+        <item>Completado con incidentes graves</item>
+        <item>Cancelado</item>
+    </string-array>
+    <!-- //////////////////////////////// -->
+    <string name="new_form_doc_data_comments_title">Comentarios:</string>
+    <!-- //////////////////////////////// -->
 
 
-            <!-- Lineas del documento -->
-            <string name="new_form_doc_lines_title">Líneas del Documento</string>
-            <string name="new_form_doc_lines_line">Línea</string>
-            <string name="new_form_doc_lines_activities">Actividades a Realizar</string>
-            <string name="new_form_doc_lines_tools">Herramientas a Utilizar</string>
-            <string name="new_form_doc_lines_equipment">Equipo de Protección Personal</string>
-            <string name="new_form_doc_lines_risks">Peligros y Riesgos</string>
-            <string name="new_form_doc_lines_preventives">Medidas Preventivas</string>
-            <string name="add_text">Ingrese texto</string>
-            <!-- //////////////////////////////// -->
-            <!-- Opciones de "Herramientas a Utilizar" -->
-            <string-array name="new_form_doc_lines_tools_options">
-                <item>Soldadora Eléctrica</item>
-                <item>Soplete</item>
-                <item>Taladro de Mano</item>
-                <item>Mini Cargador</item>
-                <item>Eslinga de cable de acero</item>
-                <item>Faja textil</item>
-                <item>Amoladora</item>
-                <item>Chispero</item>
-            </string-array>
-            <!-- //////////////////////////////// -->
-            <!-- Opciones de "Equipo de Protección Personal" -->
-            <string-array name="new_form_doc_lines_equipment_options">
-                <item>Guante vaqueta</item>
-                <item>Guantes de protección mecánica</item>
-                <item>Guantes de Látex</item>
-                <item>Guantes de Nitrilo</item>
-                <item>Guantes de Soldador</item>
-                <item>Lentes de oxicorte</item>
-                <item>Casco</item>
-                <item>Delantal de cuero</item>
-                <item>Protección audittiva</item>
-                <item>Arnés de Seguridad</item>
-            </string-array>
-            <!-- //////////////////////////////// -->
-            <!-- Opciones de "Peligros y Riesgos" -->
-            <string-array name="new_form_doc_lines_risks_option">
-                <item>Aplastamiento</item>
-                <item>Atrapamiento</item>
-                <item>Explosión e incendio</item>
-                <item>Caída distinto nivel</item>
-                <item>Caída de objetos en manipulación</item>
-                <item>Caída de pieza durante izaje</item>
-                <item>Caída mismo nivel</item>
-            </string-array>
-            <!-- //////////////////////////////// -->
-            <!-- Opciones de "Medidas Preventivas" -->
-            <string-array name="new_form_lines_preventives_options">
-                <item>Amarrado el 100% del tiempo</item>
-                <item>Usar protección solar</item>
-                <item>Amarrar cada parante con faja y puente grúa</item>
-                <item>Asegurar trayecto de carga suspendida</item>
-                <item>Atención tránsito de colaboladores</item>
-                <item>Atención tránsito de otros equipos</item>
-                <item>Atención en la tarea</item>
-                <item>Check list de pre uso</item>
-                <item>Chequeo de Instalación Eléctrica</item>
-                <item>Chequeo del Estado de la Herramienta</item>
-            </string-array>
-            <!-- //////////////////////////////// -->
-        <!-- //////////////////////////////// -->
+    <!-- Lineas del documento -->
+    <string name="new_form_doc_lines_title">Líneas del Documento</string>
+    <string name="new_form_doc_lines_line">Línea</string>
+    <string name="new_form_doc_lines_activities">Actividades a Realizar</string>
+    <string name="new_form_doc_lines_tools">Herramientas a Utilizar</string>
+    <string name="new_form_doc_lines_equipment">Equipo de Protección Personal</string>
+    <string name="new_form_doc_lines_risks">Peligros y Riesgos</string>
+    <string name="new_form_doc_lines_preventives">Medidas Preventivas</string>
+    <string name="add_text">Ingrese texto</string>
+    <!-- //////////////////////////////// -->
+    <!-- Opciones de "Herramientas a Utilizar" -->
+    <string-array name="new_form_doc_lines_tools_options">
+        <item>Soldadora Eléctrica</item>
+        <item>Soplete</item>
+        <item>Taladro de Mano</item>
+        <item>Mini Cargador</item>
+        <item>Eslinga de cable de acero</item>
+        <item>Faja textil</item>
+        <item>Amoladora</item>
+        <item>Chispero</item>
+    </string-array>
+    <!-- //////////////////////////////// -->
+    <!-- Opciones de "Equipo de Protección Personal" -->
+    <string-array name="new_form_doc_lines_equipment_options">
+        <item>Guante vaqueta</item>
+        <item>Guantes de protección mecánica</item>
+        <item>Guantes de Látex</item>
+        <item>Guantes de Nitrilo</item>
+        <item>Guantes de Soldador</item>
+        <item>Lentes de oxicorte</item>
+        <item>Casco</item>
+        <item>Delantal de cuero</item>
+        <item>Protección audittiva</item>
+        <item>Arnés de Seguridad</item>
+    </string-array>
+    <!-- //////////////////////////////// -->
+    <!-- Opciones de "Peligros y Riesgos" -->
+    <string-array name="new_form_doc_lines_risks_option">
+        <item>Aplastamiento</item>
+        <item>Atrapamiento</item>
+        <item>Explosión e incendio</item>
+        <item>Caída distinto nivel</item>
+        <item>Caída de objetos en manipulación</item>
+        <item>Caída de pieza durante izaje</item>
+        <item>Caída mismo nivel</item>
+    </string-array>
+    <!-- //////////////////////////////// -->
+    <!-- Opciones de "Medidas Preventivas" -->
+    <string-array name="new_form_lines_preventives_options">
+        <item>Amarrado el 100% del tiempo</item>
+        <item>Usar protección solar</item>
+        <item>Amarrar cada parante con faja y puente grúa</item>
+        <item>Asegurar trayecto de carga suspendida</item>
+        <item>Atención tránsito de colaboladores</item>
+        <item>Atención tránsito de otros equipos</item>
+        <item>Atención en la tarea</item>
+        <item>Check list de pre uso</item>
+        <item>Chequeo de Instalación Eléctrica</item>
+        <item>Chequeo del Estado de la Herramienta</item>
+    </string-array>
+    <!-- //////////////////////////////// -->
+    <!-- //////////////////////////////// -->
 
-            <!-- Listado de Documentos -->
-            <string name="form_list_title">Listado de Documentos</string>
-            <string name="form_list_number">Numero</string>
-            <string name="form_list_name">Titulo</string>
-            <string name="form_list_estate">Estado</string>
-            <string name="form_list_date">Fecha</string>
-            <string name="form_list_user">Usuario</string>
-            <string name="form_list_edit">Editar</string>
-            <string name="form_list_view_doc">Ver Documento</string>
-            <string name="form_list_btn_edit">Editar</string>
-            <string name="form_list_btn_view_doc">Ver Dettalle</string>
-            <!-- //////////////////////////////// -->
+    <!-- Listado de Documentos -->
+    <string name="form_list_title">Listado de Documentos</string>
+    <string name="form_list_number">Numero</string>
+    <string name="form_list_name">Titulo</string>
+    <string name="form_list_estate">Estado</string>
+    <string name="form_list_date">Fecha</string>
+    <string name="form_list_user">Usuario</string>
+    <string name="form_list_edit">Editar</string>
+    <string name="form_list_view_doc">Ver Documento</string>
+    <string name="form_list_btn_edit">Editar</string>
+    <string name="form_list_btn_view_doc">Ver Dettalle</string>
+    <!-- //////////////////////////////// -->
     <!-- //////////////////////////////////// -->
 
     <!-- Herramientas -->
@@ -132,23 +132,23 @@
     <string name="tools_btn_edit">Ver y Editar</string>
     <string name="tools_btn_stock">Stock</string>
     <string name="tools_menu_title">Herramientas</string>
-        <!--Nueva Herramienta-->
-        <string name="new_tool_title">Nueva Herramienta</string>
-        <string name="new_tool_name">Nombre de la Herramienta:</string>
-        <string name="new_tool_image">Puede subir una imagen:</string>
-        <string name="new_tool_btn_save">Guardar</string>
-        <string name="upload_img_tool_desc">Cargar imagen de la herramienta</string>
-        <!-- //////////////////////////////// -->
-        <!-- Listado de Herramientas -->
-        <string name="tools_list_title">Listado de Herramientas</string>
-        <string name="tools_list_line">Linea</string>
-        <string name="tools_list_name">Nombre</string>
-        <string name="tools_list_date">Fecha</string>
-        <string name="tools_list_image">Imagen</string>
-        <string name="tools_list_edit">Editar</string>
-        <string name="tools_list_delete">Eliminar</string>
-        <string name="tools_list_btn_edit">Editar</string>
-        <string name="tools_list_btn_delete">Eliminar</string>
+    <!--Nueva Herramienta-->
+    <string name="new_tool_title">Nueva Herramienta</string>
+    <string name="new_tool_name">Nombre de la Herramienta:</string>
+    <string name="new_tool_image">Puede subir una imagen:</string>
+    <string name="new_tool_btn_save">Guardar</string>
+    <string name="upload_img_tool_desc">Cargar imagen de la herramienta</string>
+    <!-- //////////////////////////////// -->
+    <!-- Listado de Herramientas -->
+    <string name="tools_list_title">Listado de Herramientas</string>
+    <string name="tools_list_line">Linea</string>
+    <string name="tools_list_name">Nombre</string>
+    <string name="tools_list_date">Fecha</string>
+    <string name="tools_list_image">Imagen</string>
+    <string name="tools_list_edit">Editar</string>
+    <string name="tools_list_delete">Eliminar</string>
+    <string name="tools_list_btn_edit">Editar</string>
+    <string name="tools_list_btn_delete">Eliminar</string>
     <!-- //////////////////////////////// -->
     <!-- //////////////////////////////////// -->
 
@@ -170,8 +170,6 @@
 
     <!-- Otros -->
     <string name="btn_save">Guardar</string>
-
-
 
 
 </resources>

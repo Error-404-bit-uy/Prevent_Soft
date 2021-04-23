@@ -22,7 +22,7 @@ public interface UserDao {
     void deleteUser(User user);
 
     @Query("SELECT * FROM User WHERE email= (:email) AND password= (:password)")
-        User loginUser(String email, String password);
+     User loginUser(String email, String password);
 
    // @Query("INSERT INTO User (email,superuser,password) VALUES (:email,1,:password)")
    //     User registerFirstUser(String email, String password);
