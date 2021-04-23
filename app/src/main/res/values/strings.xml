@@ -137,6 +137,7 @@
         <string name="new_tool_name">Nombre de la Herramienta:</string>
         <string name="new_tool_image">Puede subir una imagen:</string>
         <string name="new_tool_btn_save">Guardar</string>
+        <string name="upload_img_tool_desc">Cargar imagen de la herramienta</string>
         <!-- //////////////////////////////// -->
         <!-- Listado de Herramientas -->
         <string name="tools_list_title">Listado de Herramientas</string>
