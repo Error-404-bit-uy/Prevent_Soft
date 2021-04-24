@@ -15,14 +15,12 @@ import com.bit.preventsoft.models.User;
 
 public class MainActivity extends AppCompatActivity {
 
-    //We initialize the inputs
     //User Name Input
        EditText usrLoginText;
     //Password Input
        EditText passLoginText;
-       //Login button
+    //Login button
        Button loginBtn;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
 
-                        //user.setEmail("email@email.com");
-                        //user.setPassword("password");
                         String userName = usrLoginText.getText().toString();
                         String userPass = passLoginText.getText().toString();
                         if(userName.isEmpty() || userPass.isEmpty()){

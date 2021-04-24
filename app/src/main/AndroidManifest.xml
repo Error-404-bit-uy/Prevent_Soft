@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PreventSoft">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".FormsListActivity"></activity>
+        <activity android:name=".EditFormActivity" />
+        <activity android:name=".NewFormActivity" />
+        <activity android:name=".StockToolActivity" />
+        <activity android:name=".EditToolActivity" />
+        <activity android:name=".NewToolActivity" />
+        <activity android:name=".ToolsMenuActivity" />
+        <activity android:name=".PreventionsActivity" />
+        <activity android:name=".RecomendationsActivity" />
+        <activity android:name=".FormsMenuActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
