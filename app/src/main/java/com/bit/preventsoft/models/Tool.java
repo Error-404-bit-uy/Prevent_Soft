@@ -12,8 +12,12 @@ public class Tool {
     @NonNull
     public String name;
 
+    public String imageUrl;
+
     public Tool() {
     }
+
+
 
     public Tool(int toolId, @NonNull String name) {
         this.toolId = toolId;
@@ -35,5 +39,12 @@ public class Tool {
 
     public void setName(@NonNull String name) {
         this.name = name;
+    }
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

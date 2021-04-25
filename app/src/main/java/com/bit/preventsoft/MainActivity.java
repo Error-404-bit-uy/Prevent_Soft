@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     //Password Input
        EditText passLoginText;
     //Login button
-       Button loginBtn;
+       Button loginBtn, regBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,25 @@ public class MainActivity extends AppCompatActivity {
         usrLoginText = (EditText)findViewById(R.id.login_usr);
         passLoginText = (EditText)findViewById(R.id.login_pass);
         loginBtn = (Button)findViewById(R.id.loginBtn);
+        regBtn = (Button)findViewById(R.id.login_title);
+        regBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        User user = new User();
+                        user.setEmail("email@email.com");
+                        user.setSuperUser(true);
+                        user.setPassword("password");
+                        PreventSoftDatabase preventSoftDatabase = PreventSoftDatabase.getDatabase(getApplicationContext());
+                        UserDao userDao = preventSoftDatabase.userDao();
+                        userDao.insertUser(user);
+                    }
+                }).start();
+
+            }
+        });
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

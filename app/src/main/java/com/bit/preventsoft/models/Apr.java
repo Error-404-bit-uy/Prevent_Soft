@@ -18,21 +18,20 @@ public class Apr {
     @NonNull
     public String title;
     @NonNull
-    public long createdAt = System.currentTimeMillis();
+    public long createdAt;
     @NonNull
-    public int docNumber;
+
     public String comments;
     @NonNull
-    public int creatorId;
+    public String creatorId;
     public String status;
 
     public Apr() {
     }
 
-    public Apr(@NonNull String title, long createdAt, int docNumber, String comments, int creatorId, String status) {
+    public Apr(@NonNull String title, long createdAt, String comments, String creatorId, String status) {
         this.title = title;
         this.createdAt = createdAt;
-        this.docNumber = docNumber;
         this.comments = comments;
         this.creatorId = creatorId;
         this.status = status;
@@ -63,14 +62,6 @@ public class Apr {
         this.createdAt = createdAt;
     }
 
-    public int getDocNumber() {
-        return docNumber;
-    }
-
-    public void setDocNumber(int docNumber) {
-        this.docNumber = docNumber;
-    }
-
     public String getComments() {
         return comments;
     }
@@ -79,11 +70,11 @@ public class Apr {
         this.comments = comments;
     }
 
-    public int getCreatorId() {
+    public String getCreatorId() {
         return creatorId;
     }
 
-    public void setCreatorId(int creatorId) {
+    public void setCreatorId(String creatorId) {
         this.creatorId = creatorId;
     }
 
