@@ -36,7 +36,7 @@
                 android:text="@string/prevention_tab_1_title" />
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/prevention-tab_2"
+                android:id="@+id/prevention_tab_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/prevention_tab_2_title" />
@@ -65,7 +65,24 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/prevention_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="410dp"
+                android:layout_height="376dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="@string/cov_19_reco"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
