@@ -2,6 +2,7 @@ package com.bit.preventsoft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,11 +12,13 @@ public class FormsMenuActivity extends AppCompatActivity {
 
     Button newFormBtn, editFormBtn, historicFormBtn;
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.forms_menu);
         String email = getIntent().getStringExtra("name");
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         newFormBtn = findViewById(R.id.btn_new_document);
         editFormBtn = findViewById(R.id.btn_edit_document);

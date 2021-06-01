@@ -2,6 +2,7 @@ package com.bit.preventsoft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,7 @@ public class NewFormActivity extends AppCompatActivity {
     Button confirmBtn;
 
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,7 @@ public class NewFormActivity extends AppCompatActivity {
         docActivities = findViewById(R.id.doc_lines_activities_text);
         docStatus = findViewById(R.id.new_form_status_selector);
         confirmBtn = findViewById(R.id.btn_save);
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         Apr apr = new Apr();
         AprLine aprLine = new AprLine();

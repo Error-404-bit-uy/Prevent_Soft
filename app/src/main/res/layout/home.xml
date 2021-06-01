@@ -61,8 +61,8 @@
 
     <Button
         android:id="@+id/btn_forms"
-        android:layout_width="173dp"
-        android:layout_height="124dp"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="40dp"
         android:text="@string/home_btn_form"
@@ -77,8 +77,8 @@
 
     <Button
         android:id="@+id/btn_tools"
-        android:layout_width="173dp"
-        android:layout_height="124dp"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
         android:layout_marginBottom="40dp"
         android:text="@string/home_btn_tools"
         android:textAlignment="center"
@@ -94,8 +94,8 @@
 
     <Button
         android:id="@+id/btn_prevention"
-        android:layout_width="173dp"
-        android:layout_height="124dp"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="92dp"
         android:text="@string/home_btn_prevent"
@@ -107,8 +107,8 @@
 
     <Button
         android:id="@+id/btn_recomendations"
-        android:layout_width="173dp"
-        android:layout_height="124dp"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
         android:layout_marginBottom="92dp"
         android:text="@string/home_btn_reco"
         android:textSize="5.9sp"

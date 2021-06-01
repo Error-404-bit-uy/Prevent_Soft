@@ -2,6 +2,7 @@ package com.bit.preventsoft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,11 +12,13 @@ public class ToolsMenuActivity extends AppCompatActivity {
 
     Button newToolBtn, editToolBtn, stockToolBtn;
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tools_menu);
         String email = getIntent().getStringExtra("name");
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         newToolBtn = findViewById(R.id.btn_new_tool);
         editToolBtn = findViewById(R.id.btn_edit_tool);

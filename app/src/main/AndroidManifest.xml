@@ -9,16 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PreventSoft">
-        <activity android:name=".FormsListActivity"></activity>
-        <activity android:name=".EditFormActivity" />
-        <activity android:name=".NewFormActivity" />
-        <activity android:name=".StockToolActivity" />
-        <activity android:name=".EditToolActivity" />
-        <activity android:name=".NewToolActivity" />
-        <activity android:name=".ToolsMenuActivity" />
-        <activity android:name=".PreventionsActivity" />
-        <activity android:name=".RecomendationsActivity" />
-        <activity android:name=".FormsMenuActivity" />
+        <activity
+            android:name=".FormsListActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".EditFormActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".NewFormActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".StockToolActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".EditToolActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".NewToolActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".ToolsMenuActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".PreventionsActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".RecomendationsActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".FormsMenuActivity"
+            android:parentActivityName=".HomeActivity"/>
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

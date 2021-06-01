@@ -2,6 +2,7 @@ package com.bit.preventsoft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,10 +23,12 @@ public class NewToolActivity extends AppCompatActivity {
     Button saveTool;
     Tool tool = new Tool();
 
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_tool);
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
     toolName = findViewById(R.id.new_tool_name);
     imageTool = findViewById(R.id.upload_img_btn);
     saveTool = findViewById(R.id.save_new_tool_btn);
