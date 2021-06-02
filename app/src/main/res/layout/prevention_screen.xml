@@ -5,7 +5,8 @@
 
     android:id="@+id/prevention_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:minHeight="800dp">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -19,7 +20,7 @@
             android:background="#E25E1493"
             app:layout_scrollFlags="scroll|enterAlways"
             app:title="@string/prevention_title"
-            app:titleTextColor="#FFFFFF"></androidx.appcompat.widget.Toolbar>
+            app:titleTextColor="#FFFFFF" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/prevention_tabs"
@@ -69,8 +70,8 @@
 
             <EditText
                 android:id="@+id/editTextTextMultiLine2"
-                android:layout_width="410dp"
-                android:layout_height="376dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
@@ -78,10 +79,12 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 

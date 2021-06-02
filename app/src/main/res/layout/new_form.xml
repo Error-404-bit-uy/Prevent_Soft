@@ -53,7 +53,7 @@
 
         <EditText
             android:id="@+id/document_name"
-            android:layout_width="376dp"
+            android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_marginTop="12dp"
             android:ems="10"
@@ -80,7 +80,7 @@
 
         <Spinner
             android:id="@+id/new_form_status_selector"
-            android:layout_width="365dp"
+            android:layout_width="match_parent"
             android:layout_height="28dp"
             android:layout_marginTop="12dp"
             android:entries="@array/new_form_status_selector_options"
@@ -103,7 +103,7 @@
 
         <EditText
             android:id="@+id/editTextTextMultiLine"
-            android:layout_width="376dp"
+            android:layout_width="match_parent"
             android:layout_height="61dp"
             android:layout_marginTop="12dp"
             android:ems="10"
@@ -175,7 +175,7 @@
 
         <EditText
             android:id="@+id/doc_lines_activities_text"
-            android:layout_width="381dp"
+            android:layout_width="match_parent"
             android:layout_height="105dp"
             android:layout_marginTop="12dp"
             android:ems="10"
@@ -200,7 +200,7 @@
 
         <Spinner
             android:id="@+id/new_form_tools_selector"
-            android:layout_width="362dp"
+            android:layout_width="match_parent"
             android:layout_height="43dp"
             android:layout_marginTop="12dp"
             android:entries="@array/new_form_doc_lines_tools_options"
@@ -225,7 +225,7 @@
 
         <Spinner
             android:id="@+id/new_form_epp_selector"
-            android:layout_width="420dp"
+            android:layout_width="match_parent"
             android:layout_height="43dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="12dp"
@@ -251,7 +251,7 @@
 
         <Spinner
             android:id="@+id/new_form_risks_selector"
-            android:layout_width="413dp"
+            android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_marginStart="35dp"
             android:layout_marginTop="12dp"
@@ -277,7 +277,7 @@
 
         <Spinner
             android:id="@+id/new_form_preventives_selector"
-            android:layout_width="422dp"
+            android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="12dp"
