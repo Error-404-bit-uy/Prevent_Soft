@@ -22,7 +22,7 @@ import com.bit.preventsoft.models.Tool;
 import com.bit.preventsoft.models.User;
 
 @Database(entities={Apr.class, AprLine.class, Epp.class, Hazard.class, Precaution.class, Tool.class, User.class,
-                    }, version=2)
+                    }, version=3)
 public abstract class PreventSoftDatabase extends RoomDatabase {
     public abstract AprDao aprDao();
     public abstract AprLineDao aprLineDao();

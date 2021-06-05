@@ -16,6 +16,8 @@ import com.bit.preventsoft.dao.ToolDao;
 import com.bit.preventsoft.database.PreventSoftDatabase;
 import com.bit.preventsoft.models.Tool;
 
+import java.util.List;
+
 public class NewToolActivity extends AppCompatActivity {
 
     EditText toolName;
@@ -39,7 +41,8 @@ public class NewToolActivity extends AppCompatActivity {
 
 
             tool.setName(toolName.getText().toString());
-            if(tool.getName() == null){
+            tool.setImage(R.drawable.icono_abrir_carpetaxhdpi);
+            if(tool.getName().isEmpty()){
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -48,14 +51,15 @@ public class NewToolActivity extends AppCompatActivity {
                 });
 
             } else {
-                PreventSoftDatabase preventSoftDatabase = PreventSoftDatabase.getDatabase(getApplicationContext());
-                ToolDao toolDao = preventSoftDatabase.toolDao();
+
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        tool.setName(toolName.toString());
+                        //tool.setName(toolName.toString());
+                        PreventSoftDatabase preventSoftDatabase = PreventSoftDatabase.getDatabase(getApplicationContext());
+                        ToolDao toolDao = preventSoftDatabase.toolDao();
                         toolDao.insertTool(tool);
-                        if(tool.getName() == null){
+                        if(tool.getName().isEmpty()){
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {

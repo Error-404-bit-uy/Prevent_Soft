@@ -9,8 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.bit.preventsoft.dao.ToolDao;
 import com.bit.preventsoft.dao.UserDao;
 import com.bit.preventsoft.database.PreventSoftDatabase;
+import com.bit.preventsoft.models.Tool;
 import com.bit.preventsoft.models.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,9 +42,15 @@ public class MainActivity extends AppCompatActivity {
                         user.setEmail("email@email.com");
                         user.setSuperUser(true);
                         user.setPassword("password");
+                        Tool tool = new Tool();
+                        tool.setName("Amoladora");
+                        tool.setImage(R.drawable.icono_abrir_carpetaxhdpi);
                         PreventSoftDatabase preventSoftDatabase = PreventSoftDatabase.getDatabase(getApplicationContext());
                         UserDao userDao = preventSoftDatabase.userDao();
                         userDao.insertUser(user);
+                        ToolDao toolDao = preventSoftDatabase.toolDao();
+                        toolDao.insertTool(tool);
+
                     }
                 }).start();
 
